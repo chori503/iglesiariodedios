@@ -43,15 +43,17 @@
                     <ul class="rd-navbar-nav">
                       <li class="rd-nav-item "><a class="rd-nav-link" href="index.html">Inicio</a>
                       </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="sermones.html">Sermones</a>
+                      </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">Sobre Nosotros</a>
                       </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="https://zeno.fm/miradio2819/" target="__blank">Radio</a>
                       </li>
                       <li class="rd-nav-item active"><a class="rd-nav-link" href="contacts.html">Contacto</a>
                       </li>
-                    </ul><a class="button button-primary button-sm" href="#">Donar</a>
+                    </ul><a class="button button-primary button-sm" href="#" onclick="donate()">Donar</a>
                   </div>
-                </div><a class="button button-primary button-sm" href="#">Donar</a>
+                </div><a class="button button-primary button-sm" href="#" onclick="donate()">Donar</a>
               </div>
             </div>
           </nav>
@@ -64,7 +66,7 @@
               <div class="col-12 col-lg-9">
                 <h2 class="breadcrumbs-custom-title">Contactanos</h2>
                 <ul class="breadcrumbs-custom-path">
-                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html">Inicio</a></li>
                   <li class="active">Contacto</li>
                 </ul>
               </div>
@@ -88,7 +90,7 @@
               <div class="box-icon-classic">
                 <div class="box-icon-inner decorate-circle decorate-color-secondary-2"><span class="icon-xl linearicons-map2 icon-gradient-2"></span></div>
                 <div class="box-icon-caption">
-                  <h4><a href="https://www.google.com/maps/dir/13.7159815,-89.1801214/13.713944,-89.1956833/@13.714795,-89.1964634,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0" target="blank">29 Calle Poniente y 11 Av. Norte
+                  <h4><a href="https://www.google.com/maps/dir/13.7159815,-89.1801214/13.713944,-89.1956833/@13.714795,-89.1964634,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0" target="blank">29 Calle Poniente y 11 Av. Norte (Centro comercial 29 - Local 4)
                     1101 San Salvador, El Salvador</a></h4>
                 </div>
               </div>
@@ -145,13 +147,13 @@
         <div class="container wow-outer">
           <div class="wow fadeIn">
             <div class="row row-50 row-lg-60">
-              <div class="col-12"><a href="index.html"><img src="images/irdLogo.jpg" style="border-radius: 10px;" alt="" width="207" height="51"/></a>  <p>29 Calle Poniente y 11 Av. Norte
+              <div class="col-12"><a href="index.html"><img src="images/irdLogo.jpg" style="border-radius: 10px;" alt="" width="207" height="51"/></a>  <p>29 Calle Poniente y 11 Av. Norte (Centro comercial 29 - Local 4)
                 1101 San Salvador, El Salvador</p></div>
               <div class="col-12">
                 <ul class="footer-minimal-nav">
                   <li><a href="about-us.html">Sobre Nosotros</a></li>
-                  <li><a href="#">Radio</a></li>
-                  <li><a href="contacts.html">Contacts</a></li>
+                  <li><a href="https://zeno.fm/miradio2819/" target="__blank">Radio</a></li>
+                  <li><a href="contacts.html">Contacto</a></li>
                 </ul>
               </div>
               <div class="col-12">
@@ -169,6 +171,19 @@
         </div>
       </footer>
     </div>
+    <div style="display: none;">
+      <form action="https://www.paypal.com/donate" method="post" target="_top" id="formDonate">
+        <input type="hidden" name="hosted_button_id" value="DGTPFA74VPZW8" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_SV/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+    </div>
+    <script>
+      function donate(){
+        var form=document.getElementById("formDonate");
+        form.submit();
+      }
+    </script>
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>

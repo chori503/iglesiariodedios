@@ -82,9 +82,9 @@
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="../contacts.html">Contacto</a>
                     </li>
-                  </ul><a class="button button-primary button-sm" href="#">Donar</a>
+                  </ul><a class="button button-primary button-sm" href="#" onclick="donate()">Donar</a>
                 </div>
-              </div><a class="button button-primary button-sm" href="#">Donar</a>
+              </div><a class="button button-primary button-sm" href="#" onclick="donate()">Donar</a>
             </div>
           </div>
         </nav>
@@ -229,7 +229,7 @@
             <div class="col-12">
               <ul class="footer-minimal-nav">
                 <li><a href="about-us.html">Sobre Nosotros</a></li>
-                <li><a href="#">Radio</a></li>
+                <li><a href="https://zeno.fm/miradio2819/" target="__blank">Radio</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
               </ul>
             </div>
@@ -251,6 +251,19 @@
       </div>
     </footer>
   </div>
+  <div style="display: none;">
+    <form action="https://www.paypal.com/donate" method="post" target="_top" id="formDonate">
+      <input type="hidden" name="hosted_button_id" value="DGTPFA74VPZW8" />
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+      <img alt="" border="0" src="https://www.paypal.com/en_SV/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+  </div>
+  <script>
+    function donate(){
+      var form=document.getElementById("formDonate");
+      form.submit();
+    }
+  </script>
   <div class="snackbars" id="form-output-global"></div>
   <script src="../js/core.min.js"></script>
   <script src="../js/script.js"></script>
